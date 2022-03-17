@@ -1,0 +1,41 @@
+{% load static %}
+
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'home_page' %}">
+      <div class="sidebar-brand-icon">
+        <img src="{% static 'img/logo-icon.png' %}" alt="" />
+      </div>
+      <div class="sidebar-brand-text mx-3">
+        <img src="{% static 'img/logo.png' %}" alt="" />
+      </div>
+    </a>
+
+    <li class="nav-item active">
+      <a class="nav-link" href="{% url 'movies_page' %}">
+        <i class="fas fa-fw fa-film"></i>
+        <span>Movies</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'events_page' %}">
+        <i class="fas fa-fw fa-glass-cheers"></i>
+        <span>Events</span></a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'people_page' %}">
+        <i class="fas fa-fw fa-users"></i>
+        <span>People</span></a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'sport_page' %}">
+        <i class="fas fa-fw fa-futbol"></i>
+        <span>Sports</span></a
+      >
+    </li>
+
+    <hr class="sidebar-divider" />
+
+
+  </ul>
